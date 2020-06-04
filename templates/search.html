@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+Search book
+{% endblock %}
+{% block body %}
+<h1>List of searched books who match the given keywords</h1>
+<ol>
+  {{ for list in result }}
+   <li>{{ list.title }}</li>
+  {{ endfor }}
+</ol>
+{% endblock %}
